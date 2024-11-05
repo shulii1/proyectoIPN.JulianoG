@@ -1,0 +1,34 @@
+@font-face {
+    font-family:"Poppins";
+    src: url(fonts/Poppins.zip);
+}
+
+:root{
+   --gris-claro:#777; 
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    display: inline;
+    
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    margin: 10px auto;
+    font-size: 17px;
+}
+
+body > header{
+    background-color: #333;
+}
