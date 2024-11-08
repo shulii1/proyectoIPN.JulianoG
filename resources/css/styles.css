@@ -1,34 +1,50 @@
+/*
+JG: no se me aplican las fuentes de la carpeta de "fonts"
 @font-face {
     font-family:"Poppins";
-    src: url(fonts/Poppins.zip);
+    src: url(fonts/poppins.zip);
+}
+*/
+
+:root {
+    --primary-color: #506690;
+    --secondary-color: #f0f0f0;
+    --text-color: #515151;
+    --accent-color: #45709B;
+    --dark-accent: #40506b;
 }
 
-:root{
-   --gris-claro:#777; 
-}
-
-*{
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-header{
-    display: inline;
-    
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
 }
 
-ul{
+header {
+    padding: 1rem;
+    color: #FFF;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-li{
-    list-style: none;
-    display: inline;
-    margin: 10px auto;
-    font-size: 17px;
+main {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
-body > header{
-    background-color: #333;
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    font-size: 8px;
+    text-align: center;
+    color: #FFF;
 }

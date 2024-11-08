@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de deetalles</title>
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="resources/css/details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="resources/img/logo_iPN.svg" alt="logo_iPN"></a>
+        <a href="edition.html" class="btn btn-primary">Agregar Producto</a>
+    </header>
+    <main>
+        <div class="product-card">
+            <div class="product-grid">
+                <div class="image-gallery">
+                    <div class="gallery-container" id="galleryContainer">
+                        <img src="/api/placeholder/400/400" alt="Producto" class="gallery-image">
+                        <img src="/api/placeholder/400/400" alt="Producto" class="gallery-image">
+                        <img src="/api/placeholder/400/400" alt="Producto" class="gallery-image">
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="btn" onclick="prevImage()">Anterior</button>
+                        <button class="btn" onclick="nextImage()">Siguiente</button>
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h2>Remera Básica</h2>
+                    <p class="sku">SKU: PRD001</p>
+
+                    <div class="product-meta">
+                        <div><strong>Categoría:</strong> Ropa</div>
+                        <div><strong>Marca:</strong> Todomoda</div>
+                        <div><strong>Tipo:</strong> Producto </div>
+                    </div>
+
+                    <p class="description">
+                        Remera básica, disponible en varios colores y talles.
+                    </p>
+
+                    <div class="dimensions">
+                        <h3>Dimensiones</h3>
+                        <div><strong>Peso:</strong> 200g</div>
+                        <div><strong>Medidas:</strong> 30cm x 20cm</div>
+                    </div>
+
+                    <div class="promotions">
+                        <h3>Promoción Activa</h3>
+                        <p>20% de descuento en la segunda unidad</p>
+                    </div>
+
+                    <a href="edition.html" class="btn"
+                        style="display: inline-block; margin-top: 1rem;"><!--JG: Estilos en linea porque me dio fiaca, perdon-->
+                        Editar Producto
+                    </a>
+                </div>
+            </div>
+
+            <table class="variants-table">
+                <thead>
+                    <tr>
+                        <th>Color</th>
+                        <th>Talle</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Blanco</td>
+                        <td>S</td>
+                        <td>$2500</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Blanco</td>
+                        <td>M</td>
+                        <td>$2500</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Negro</td>
+                        <td>S</td>
+                        <td>$2500</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2024 iL Gomes Juliano. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de edicion</title>
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="resources/css/edition.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="resources/img/logo_iPN.svg" alt="logo_iPN"></a>
+        <a href="edition.html" class="btn btn-primary">Agregar Producto</a>
+    </header>
+    <main>
+        <form class="card">
+            <div class="form-grid">
+                <div>
+                    <div class="form-group">
+                        <label>Imágenes del Producto</label>
+                        <input type="file" multiple accept="image/*" class="form-control">
+                        <div style="margin-top: 1rem;">
+                            <img src="/api/placeholder/100/100" alt="Preview"
+                                style="width: 100px; height: 100px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Nombre del Producto</label>
+                        <input type="text" class="form-control" value="Remera Básica">
+                    </div>
+                    <div class="form-group">
+                        <label>SKU</label>
+                        <input type="text" class="form-control" value="PRD001">
+                    </div>
+                    <div class="form-group">
+                        <label>Descripción</label>
+                        <textarea class="form-control"
+                            rows="4">Remera básica de algodón premium, disponible en varios colores y talles.</textarea>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label>Categoría</label>
+                        <select class="form-control">
+                            <option selected>Ropa</option>
+                            <option>Accesorios</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Marca</label>
+                        <input type="text" class="form-control" value="Marca Example">
+                    </div>
+                    <div class="form-group">
+                        <label>Tipo de Producto</label>
+                        <select class="form-control">
+                            <option selected>Producto con variantes</option>
+                            <option>Artículo único</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Peso (en gramos)</label>
+                        <input type="number" class="form-control" value="200">
+                    </div>
+                    <div class="form-group">
+                        <label>Medidas</label>
+                        <input type="text" class="form-control" value="30cm x 20cm">
+                    </div>
+                </div>
+            </div>
+            <h3>Variantes del Producto</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Color</th>
+                        <th>Talle</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" value="Blanco"></td>
+                        <td><input type="text" class="form-control" value="S"></td>
+                        <td><input type="number" class="form-control" value="2500"></td>
+                        <td><input type="number" class="form-control" value="15"></td>
+                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-primary">Agregar Variante</button>
+            <div style="background: #e8f4ff; padding: 1rem; border-radius: 4px; margin-top: 1rem;">
+                <h3>Promoción</h3>
+                <div class="form-group">
+                    <label>Título de la Promoción</label>
+                    <input type="text" class="form-control" value="20% de descuento en la segunda unidad">
+                </div>
+            </div>
+            <div class style="margin-top: 2rem; text-align: right;">
+                <button type="button" class="btn btn-primary">Cancelar</button>
+                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Copyright © 2024 iL Gomes Juliano. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
