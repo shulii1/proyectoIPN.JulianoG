@@ -17,7 +17,7 @@
 <body>
     <header>
         <img src="resources/img/logo_iPN.svg" alt="logo_iPN">
-        <a href="edition.html" class="btn btn-primary">Agregar Producto</a>
+        <a href="edition.html" class="btn btn-primary" id="redirect">Agregar Producto</a>
     </header>
     <main>
         <section class="search-panel">
@@ -37,15 +37,15 @@
                     <div class="form-group">
                         <select class="form-control">
                             <option value="">Tipo</option>
-                            <option>Producto</option>
-                            <option>Artículo</option>
+                            <option value="1">Producto</option>
+                            <option value="2">Artículo</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <select class="form-control">
                             <option value="">Marca</option>
-                            <option>Gucci</option>
-                            <option>Balenciaga</option>
+                            <option value="1">Gucci</option>
+                            <option value="2">Balenciaga</option>
                         </select>
                     </div>
                 </div>
@@ -70,32 +70,38 @@
                 <tr>
                     <th>ID</th>
                     <th>Nombre</th>
+                    <th>SKU</th>
                     <th>Tipo</th>
                     <th>Categoría</th>
                     <th>Precio</th>
                     <th>Stock</th>
-                    <th>Acciones</th>
+                    <th>Estado</th>
+                    <th>Redirección</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>001</td>
                     <td>Remera Básica</td>
+                    <td>PRD001</td>
                     <td>Producto</td>
                     <td>Ropa</td>
                     <td>$2500</td>
                     <td>50</td>
+                    <td>Publicado</td>
                     <td>
                         <a href="details.html" class="btn btn-primary">Ver detalles</a>
                     </td>
                 </tr>
                 <tr>
                     <td>002</td>
-                    <td>Cartera Elegante</td>
+                    <td>Juego de cuchillos</td>
+                    <td>PRD123</td>
                     <td>Artículo</td>
-                    <td>Accesorios</td>
+                    <td>Cubertería</td>
                     <td>$15000</td>
                     <td>10</td>
+                    <td>Borrador</td>
                     <td>
                         <a href="details.html" class="btn btn-primary">Ver detalles</a>
                     </td>
