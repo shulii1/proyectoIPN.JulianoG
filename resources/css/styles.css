@@ -24,6 +24,12 @@ JG: no se me aplican las fuentes de la carpeta de "fonts"
 body {
     background-color: var(--secondary-color);
     color: var(--text-color);
+    width: 100vmax;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 header {
@@ -44,9 +50,11 @@ main {
 footer {
     background-color: var(--primary-color);
     padding: 1rem;
-    font-size: 8px;
+    font-size: 1rem;
     text-align: center;
     color: #FFF;
+    bottom: 0;
+    width: 100vw;
 }
 
 .btn{

@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,8 +29,8 @@
                         <img src="./resources/img/remera 3.jpg" alt="Producto" class="gallery-image">
                     </div>
                     <div class="gallery-controls">
-                        <button class="btn" onclick="prevImage()">Anterior</button>
-                        <button class="btn" onclick="nextImage()">Siguiente</button><!-- No me funciona la funcion que copie de google-->
+                        <button class="btn">Anterior</button>
+                        <button class="btn">Siguiente</button>
                     </div>
                 </div>
 
@@ -50,8 +50,22 @@
 
                     <div class="dimensions">
                         <h3>Dimensiones</h3>
-                        <div><strong>Peso:</strong> 200g</div>
-                        <div><strong>Medidas:</strong> 30cm x 20cm</div>
+                        <table class="variants-table">
+                        <thead>
+                            <tr>
+                                <th>Peso</th>
+                                <th>Altura</th>
+                                <th>Base</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>200g</td>
+                                <td>30cm</td>
+                                <td>20cm</td>
+                            </tr>
+                        </tbody>
+                        </table>
                     </div>
 
                     <div class="promotions">
@@ -59,8 +73,7 @@
                         <p>20% de descuento en la segunda unidad</p>
                     </div>
 
-                    <a href="edition.html" class="btn"
-                        style="display: inline-block; margin-top: 1rem;"><!--JG: Estilos en linea porque me dio fiaca, perdon-->
+                    <a href="edition.html" class="btn btn-secondary">
                         Editar Producto
                     </a>
                 </div>
@@ -107,6 +120,8 @@
     <footer>
         <p>Copyright © 2024 iL Gomes Juliano. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
