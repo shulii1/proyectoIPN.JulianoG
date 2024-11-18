@@ -12,12 +12,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <img src="resources/img/logo_iPN.svg" alt="logo_iPN">
-        <a href="edition.html" class="btn btn-primary" id="redirect">Agregar Producto</a>
+        <button class="btn btn-dark" id="redirect">User Info</button>
     </header>
     <main>
         <section class="search-panel">
@@ -48,12 +49,17 @@
                             <option value="2">Balenciaga</option>
                         </select>
                     </div>
+                    <div class="search-grid">
+                        <div class="form-group">
+                            <label for="isPublished">Esta publicado en sales</label>
+                            <input type="checkbox" id="isPublished">
+                        </div>
+                    </div>
                 </div>
-                <div class="search-grid">
+                <div class="search-grid display-block">
                     <div class="form-group">
                         <label>Rango de precios</label>
                         <div style="display: flex; gap: 1rem;">
-                            <!--JG: Estilo en linea porque no se porque no me funcionaba desde la hoja de esilos mediante ID-->
                             <input type="number" class="form-control" placeholder="Min">
                             <input type="number" class="form-control" placeholder="Max">
                         </div>
@@ -61,7 +67,8 @@
                 </div>
                 <div class="button-group">
                     <button type="submit" class="btn btn-primary">Buscar</button>
-                    <button type="button" class="btn btn-primary">Exportar a Excel</button>
+                    <a href="edition.html"  class="btn btn-secondary">Agregar producto</a>
+
                 </div>
             </form>
         </section>
@@ -114,10 +121,10 @@
             <a href="#">3</a>
             <a href="#">Siguiente</a>
         </div>
+        <button type="button" class="btn btn-success">Exportar busqueda a Excel</button>
     </main>
-    <footer>
-        <p>Copyright © 2024 iL Gomes Juliano. Todos los derechos reservados.</p>
-    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
