@@ -47,31 +47,39 @@
                             <option value="">Marca</option>
                             <option value="1">Gucci</option>
                             <option value="2">Balenciaga</option>
+                            <option value="3">Addidas</option>
+                            <option value="4">Nike</option>
                         </select>
                     </div>
-                    <div class="search-grid">
-                        <div class="form-group">
-                            <label for="isPublished">Esta publicado en sales</label>
-                            <input type="checkbox" id="isPublished">
-                        </div>
-                    </div>
                 </div>
-                <div class="search-grid display-block">
+                <div class="search-grid">
+                    <div class="form-control" style="height:38px;"> 
+                        <label for="isPublished">Esta publicado en ventas</label>
+                        <input type="checkbox" id="isPublished">
+                    </div>
                     <div class="form-group">
-                        <label>Rango de precios</label>
-                        <div style="display: flex; gap: 1rem;">
-                            <input type="number" class="form-control" placeholder="Min">
-                            <input type="number" class="form-control" placeholder="Max">
-                        </div>
+                        <select class="form-control">
+                            <option value="">Tipo</option>
+                            <option value="1">Artículo </option>
+                            <option value="2">Producto</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option value="">Sucursal</option>
+                            <option>San Justo</option>
+                            <option>Morón</option>
+                            <option>Isidro Casanova</option>
+                        </select>
                     </div>
                 </div>
                 <div class="button-group">
                     <button type="submit" class="btn btn-primary">Buscar</button>
-                    <a href="edition.html"  class="btn btn-secondary">Agregar producto</a>
-
+                    <a href="edition.html" class="btn btn-secondary">Agregar nuevo producto</a>
                 </div>
             </form>
         </section>
+        <button type="button" class="btn btn-success">Exportar busqueda a Excel</button>
         <table class="products-table">
             <thead>
                 <tr>
@@ -121,7 +129,6 @@
             <a href="#">3</a>
             <a href="#">Siguiente</a>
         </div>
-        <button type="button" class="btn btn-success">Exportar busqueda a Excel</button>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>

@@ -4,7 +4,7 @@
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .search-grid {
@@ -28,6 +28,11 @@
     padding: 0.5rem;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+
+/* JG: Estilos para el checkbox*/
+#isPublished {
+    float: right;
 }
 
 .btn {
@@ -117,5 +122,5 @@
         width: 100%;
     }
 
-    
+
 }

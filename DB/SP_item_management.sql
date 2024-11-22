@@ -55,7 +55,7 @@ BEGIN
         RETURN
     END
 
-    -- Validar si ya existe una imagen para este item y color
+    -- valido si ya existe una imagen para este item y color
     IF EXISTS (SELECT 1 FROM TB_img WHERE id_color = @colorId AND id_item = @itemId)
     BEGIN
         RAISERROR('Ya existe una imagen para este producto/artículo con este color.', 16, 1)
