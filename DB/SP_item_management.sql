@@ -1,4 +1,4 @@
-USE [projectIPN-JG]
+USE [projectIPN]
 GO
 
 -- Si ya existen los SP los elimina
@@ -56,14 +56,14 @@ BEGIN
     END
 
     -- valido si ya existe una imagen para este item y color
-    IF EXISTS (SELECT 1 FROM TB_img WHERE id_color = @colorId AND id_item = @itemId)
+    IF EXISTS (SELECT 1 FROM TB_img, TB_item WHERE id_color = @colorId AND id_item = @itemId)
     BEGIN
         RAISERROR('Ya existe una imagen para este producto/artículo con este color.', 16, 1)
         RETURN
     END
 
-    INSERT INTO TB_img (url_img, id_color, id_item)
-    VALUES (@url, @colorId, @itemId);
+    INSERT INTO TB_img (url_img, id_color)
+    VALUES (@url, @colorId);
 
     SELECT SCOPE_IDENTITY() AS idColorInsert, 'Imagen insertada correctamente' AS Mensaje;
 END;

@@ -91,13 +91,6 @@
     margin-bottom: 0.5rem;
 }
 
-.promotions {
-    background: #e8f4ff; 
-    padding: 1rem;
-    border-radius: 4px;
-    margin-top: 1rem;
-}
-
 @media (max-width: 768px) {
     .product-grid {
         grid-template-columns: 1fr; /*JG: Mostre las 2 columnas en una sola al alcanzar el tamaño de pantalla de celular*/
